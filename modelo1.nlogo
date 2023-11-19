@@ -1,3 +1,12 @@
+;==========================================
+; Title:  MODELO SETOR PRODUTIVO - Adaptação da versão 3.1.5
+; Author: Iago Rosa, Teófilo de Paula
+; Date:   Nov 2023
+;==========================================
+
+; Nesta versão a variável tempo é referenciada por ticks
+; Isso porque ticks tornou-se nativo e padrão recomendável
+
 breed [techs tech]
 breed [firms firm]
 

@@ -7,17 +7,15 @@ firms-own [K A T F L Mk
           Profit Prate
           t1 t2 t3]
 globals [Time Pop Y S Kcons
-         Ctotal Vtotal Ktotal
-         list-help g1 g2]
+         Ctotal Vtotal Ktotal]
 
 to start
   clear-output
   clear-all
   random-seed 1
-  ;set Time 0
   reset-ticks
   set Pop 3000
-  ;create-turtles 300
+
   create-firms 300 [
     set color green
     technology
@@ -27,37 +25,40 @@ to start
     set K 10.0
     rt random 360
     jump random 360]
+
   Global-Competitiveness
   plot-information
 end
 
 to technology
-loop [set A random-normal Acoef (Acoef * Asymmetry)
-      set T random-normal Tcoef (Tcoef * Asymmetry)
-      set F random-normal Fcoef (Fcoef * Asymmetry)
-      if A >= 0.0 and A <= 1.0 and T > 0.0 and T <= 1.0 and F >= 0.0 and F <= 10.0 [stop]]
+  loop [
+    set A random-normal Acoef (Acoef * Asymmetry)
+    set T random-normal Tcoef (Tcoef * Asymmetry)
+    set F random-normal Fcoef (Fcoef * Asymmetry)
+
+    if A >= 0.0 and A <= 1.0 and T > 0.0 and T <= 1.0 and F >= 0.0 and F <= 10.0 [stop]
+  ]
 end
 
 to run-world
-;loop [
-      ;ask firms [
-      ;set K random 5
-      ;set P random 5 ]
-      if Entry? = true [Entry]
-      set Vtotal (sum [V] of firms)
-      set Ktotal (sum [K] of firms)
-      ask firms [production-price]
-      Global-Competitiveness
-      Market-share
-      Demand
-      ask firms [Sales-Profit]
-      ask firms [ShareHolders]
-      set time (time + 1)
-      plot-information
-      if break = true [set break false stop]
-      ;if time >= history [stop]
-      tick
-;  ]
+    if Entry? = true [Entry]
+
+    set Vtotal (sum [V] of firms)
+    set Ktotal (sum [K] of firms)
+    ask firms [production-price]
+
+    Global-Competitiveness
+    Market-share
+    Demand
+
+    ask firms [Sales-Profit]
+    ask firms [ShareHolders]
+
+    plot-information
+
+    if break = true [set break false stop]
+
+  tick
 end
 
 to entry
@@ -81,7 +82,6 @@ to entry
       set K Kcons
       set Kcons 0.0
     ]
-
 
     set breed firms
     set color green
@@ -171,17 +171,14 @@ to plot-information
 
     set-current-plot "Avg Profit Rate"
         create-temporary-plot-pen "profit-rate"
-        ;set-plot-pen-color default
         plot (sum [Prate * M] of firms)
 
     set-current-plot "Capital X Price"
         clear-plot
-        ;set-plot-pen-mode 2
         ask firms [plotxy K P]
 
     set-current-plot "Market Share X Price"
         clear-plot
-        ;set-plot-pen-mode 2
         ask firms [plotxy M P]
 
     set-current-plot "População"

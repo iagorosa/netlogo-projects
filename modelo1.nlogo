@@ -57,8 +57,9 @@ to run-world
     plot-information
 
     if break = true [set break false stop]
+    if ticks >= history [set break false stop]
 
-  tick
+    tick
 end
 
 to entry

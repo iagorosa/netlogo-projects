@@ -1,7 +1,20 @@
 ;==========================================
-; Title:  MODELO NÃO ESPACIAL, VERSÃO FINAL, DERIVADO DE Teo-Nspacial-03[2] - Adaptação da versão 3.1.5
-; Author: Iago Rosa, Teófilo de Paula
-; Date:   Nov 2023
+;Title: Instabilidade Financeira Netlogo 6.4.0
+;Author: Iago Rosa & Teófilo de Paula
+;Date: Nov 2023
+;
+;Updated from: Instabilidade Financeira Netlogo 3.1.5
+;(https://gmdesenvolvimento.wixsite.com/grupo/publicacoes)
+;
+;Reference: DE PAULA, T. H. P.; Crocco. Financiamento e diversidade
+;produtiva: um modelo baseado em agentes com flutuações cíclicas emergentes.
+;Revista de Economia Contemporânea (Impresso), v. 17, p. 5-38, 2013
+;
+;How to cite:
+;Rosa, I. & De Paula, T. Instabilidade Financeira Netlogo 6.4.0. Grupo de
+;Pesquisa Moeda e Desenvolvimento
+;(https://gmdesenvolvimento.wixsite.com/grupo). Instituto Três Rios –
+;ITR/UFRRJ. Três Rios – RJ, 2023.
 ;==========================================
 
 ; Nesta versão a variável tempo é referenciada por ticks

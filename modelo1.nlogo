@@ -1,7 +1,22 @@
 ;==========================================
-; Title:  MODELO SETOR PRODUTIVO - Adaptação da versão 3.1.5
-; Author: Iago Rosa, Teófilo de Paula
-; Date:   Nov 2023
+;Title: Concorrência Monopolística com Diferenciação Assimétrica de Produto
+;Netlogo 6.4.0
+;Author: Iago Rosa & Teófilo de Paula
+;Date: Nov 2023
+;
+;Updated from: Concorrência Monopolística com Diferenciação Assimétrica de
+;Produto Netlogo 3.1.5
+;(https://gmdesenvolvimento.wixsite.com/grupo/publicacoes)
+;
+;Reference: RUIZ, R. M. Growing regions from the bottom up: regional
+;economies as a self-organizing system. Doctorate thesis. Graduate Faculty of
+;Political and Social Science of the New School University, 2003.
+;
+;How to cite:
+;Rosa, I. & De Paula, T. Concorrência Monopolística com Diferenciação
+;Assimétrica de Produto Netlogo 6.4.0. Grupo de Pesquisa Moeda e
+;Desenvolvimento (https://gmdesenvolvimento.wixsite.com/grupo). Instituto
+;Três Rios – ITR/UFRRJ. Três Rios – RJ, 2023.
 ;==========================================
 
 ; Nesta versão a variável tempo é referenciada por ticks

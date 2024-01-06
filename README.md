@@ -1,4 +1,4 @@
-# Modelos NetLogo em Economia
+# Modelos NetLogo em Economia - Aplcações Keynesianas
 
 Este repositório contém modelos desenvolvidos em NetLogo que exploram temas econômicos específicos utilizando abordagens baseadas em agentes.
 

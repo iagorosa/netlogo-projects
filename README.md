@@ -52,7 +52,7 @@ Contribuições são bem-vindas. Para contribuir, abra uma pull request.
 
 ## Licença
 
-Este trabalho está licenciado sob uma licença [Nome da Licença]. Você é livre para usar, modificar e distribuir este código, desde que atribua os devidos créditos.
+Este trabalho está licenciado sob uma licença MIT License. Você é livre para usar, modificar e distribuir este código, desde que atribua os devidos créditos.
 
 ## Contato
 
